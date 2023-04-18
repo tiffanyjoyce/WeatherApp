@@ -1,0 +1,42 @@
+<!-- if sunny, weather in transparent sun logo with animated sunny background -->
+<!-- if cloudy, weather in transparent cloud logo with animated cloudy background -->
+<!-- if rain, weather in transparent rain cloud with animated rainy background -->
+<!-- if thunderstorm, stormy background -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="background">
+      <form class = 'cityForm'  id="cityForm">
+        <label>City</label>
+        <input type="text" class = 'city'>
+        <button type="submit" class="submit btn btn-light" id='submit-button'>Get Weather</button>
+      </form>
+    <div class="card text-end" style="width: 18rem;">
+        <div class="card-body">
+          <img src="" alt="" srcset="" class="icon">
+          <h5 class="place card-title">Unavailable</h5>
+          <p class="desc card-text">No Info Available</p>
+          <div class="weather">
+            <div class="temp">Error</div>
+          </div>
+          <p>Feels like: <span class="feels">Unavailable</span></p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
