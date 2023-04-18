@@ -26,20 +26,21 @@
         <div id="background" class="background" data-bg="">
             <form class="cityForm" id="cityForm">
                 <label>City</label>
-                <input type="text" class="city rounded" id="cityInput" />
+                <input type="text" class="city" id="cityInput" placeholder="Enter a city..."/>
                 <button type="submit" class="submit btn" id="submit-button"
                     >Get Weather</button
                 >
             </form>
-            <div class="card text-end mt-4" style="width: 18rem">
+            <div class="card text-end mt-4" style="width: 20rem">
                 <div class="card-body">
-                    <img id="icon" src="iconUrl" alt="" srcset="" class="icon" />
                     <h5 id="place" class="place card-title">City</h5>
                     <p id="desc" class="desc card-text">Weather Type</p>
                     <div class="weather">
                         <div id="temp" class="temp">Temperature</div>
                     </div>
                     <p id="feels" class="feels">Feels like</p>
+                    <p id="sunrise" class="sunrise card-text">Sunrise</p>
+                    <p id="sunset" class="sunset card-text">Sunset</p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 // API key
-const api = "19975f0371f4997472*****";
+const api = "19975f0371f4997472de6a125c67a809";
 
 
 const geo = async (city_name) => {
@@ -31,11 +31,15 @@ let formSubmit = async (event) => {
         //display info
         .then((data) => {
             document.getElementById("place").innerHTML = data.name;
-            const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
-            document.getElementById("icon").innerHTML = data.weather[0].icon;
             document.getElementById("temp").innerHTML = `${data.main.temp.toFixed(0)}°F`;
             document.getElementById("feels").innerHTML = `Feels like ${data.main.feels_like.toFixed(0)}°F`;
             document.getElementById("desc").innerHTML = data.weather[0].main;
+            const sunsetGMT = new Date(data.sys.sunset * 1000);
+            const sunriseGMT = new Date(data.sys.sunrise * 1000);
+            document.getElementById("sunset").innerHTML = `Sunset: ${sunsetGMT.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}`;
+            document.getElementById('sunrise').innerHTML = `Sunrise: ${sunriseGMT.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}`;
+
+
 
             //interative background
             const bg = document.querySelector("#background");
