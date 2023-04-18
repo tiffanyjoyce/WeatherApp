@@ -1,55 +1,123 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-  }
-  body[desc="Clear"]{
-    background-image: url('images/clouds.jpeg');
-    background-color: gray;
-  }
-  .container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* background: rgb(251, 242, 133); */
-    /* background: radial-gradient(
-      circle,
-      rgba(251, 242, 133, 0.6334908963585435) 0%,
-      rgba(224, 196, 91, 0.8407738095238095) 35%,
-      rgba(230, 224, 113, 1) 100%
-    ); */
-  }
-  
-  .weather {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 15px 0;
-    font-size: 1.5rem;
-  }
-  
-  #location {
-    font-size: 3rem;
-    font-weight: 800;
-  }
-  .desc {
-    font-size: 1.25rem;
-    text-transform: capitalize;
-  }
-  
-  .circle {
-    background-color: black;
-    border-radius: 50px;
-    height: 15px;
-    width: 15px;
-    margin: 0 15px;
-  }
-  .card{
-    background-color: rgba(255, 255, 255, 0.34);
-    padding: 20px;
-    border-radius: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+#background[data-bg="clouds"] {
+  background-image: url("./images/clouds.jpeg");
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="clear"] {
+  background-image: url("./images/clear.webp");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="drizzle"] {
+  background-image: url("./images/drizzle.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="mist"] {
+  background-image: url("./images/mist.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="rain"] {
+  background-image: url("./images/rain.webp");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="snow"] {
+  background-image: url("./images/snow.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="thunderstorm"] {
+  background-image: url("./images/thunderstorm.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: rgb(251, 242, 133); */
+  /* background: radial-gradient(
+    circle,
+    rgba(251, 242, 133, 0.6334908963585435) 0%,
+    rgba(224, 196, 91, 0.8407738095238095) 35%,
+    rgba(230, 224, 113, 1) 100%
+  ); */
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+#location {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.desc {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.circle {
+  background-color: black;
+  border-radius: 50px;
+  height: 15px;
+  width: 15px;
+  margin: 0 15px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.34);
+  padding: 20px;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+#cityForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 200px;
+}
+button{
+  background-color: rgba(255, 255, 255, 0.34)!important;
+}
+#inputField{
+  color: grey;
+  background-color: grey;
+}
