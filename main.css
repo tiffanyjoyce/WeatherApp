@@ -113,6 +113,7 @@
   padding: 20px;
   border-radius: 2rem;
   margin: 0 auto;
+  border: rgba(0, 0, 0, 0);
 }
 #cityForm{
   display: flex;
@@ -126,4 +127,8 @@ button{
 }
 .place{
   margin-bottom: 15px;
+}
+.city{
+  width: 200px;
+  border: rgba(0, 0, 0, 0);
 }
