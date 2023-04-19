@@ -60,6 +60,7 @@ let formSubmit = async (event) => {
                 bg.setAttribute("data-bg", weather);
             }
         });
+        form.reset()
 };
 
 //form event listener
