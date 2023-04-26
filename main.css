@@ -67,6 +67,70 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#background[data-bg="haze"] {
+  background-image: url("./images/haze.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="tornado"] {
+  background-image: url("./images/tornado.webp");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="squall"] {
+  background-image: url("./images/squall.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="smoke"] {
+  background-image: url("./images/smoke.webp");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="sand"] {
+  background-image: url("./images/sand.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="fog"] {
+  background-image: url("./images/fog.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="dust"] {
+  background-image: url("./images/dust.webp");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background[data-bg="ash"] {
+  background-image: url("./images/ash.jpeg");
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .container {
   height: 100vh;

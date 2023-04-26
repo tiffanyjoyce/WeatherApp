@@ -56,8 +56,24 @@ let formSubmit = async (event) => {
                 bg.setAttribute("data-bg", weather);
             } else if (weather == "snow") {
                 bg.setAttribute("data-bg", weather);
-            } else {
+            } else if (weather == 'thunderstorm'){
                 bg.setAttribute("data-bg", weather);
+            }else if (weather == 'haze'){
+                bg.setAttribute("data-bg", weather);
+            }else if (weather == 'tornado'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weather == 'squall'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weahter == 'smoke'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weahter == 'sand'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weahter == 'fog'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weahter == 'dust'){
+                bg.setAttribute("data-bg", weather)
+            }else if (weahter == 'ash'){
+                bg.setAttribute("data-bg", weather)
             }
         });
         form.reset()
